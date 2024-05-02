@@ -14,8 +14,24 @@ export default {
         'apercu' : ['Apercu Bold'],
         'urbanist' : ['Urbanist'],
         'apercu-bold' : ['Apercu Bold Italic']
+      },
+      fontSize : {
+        '10xl' : '200px',
+      },
+      spacing : {
+        '128' : '500px',
+        '20rem' : '100%',
+      },
+      height : {
+        '1px' : '1px'
+      },
+      width : {
+        '1200' : '1400px'
       }
     },
+  },
+  experimental : {
+    applyComplexClasses : true,
   },
   plugins: [],
 }
