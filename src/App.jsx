@@ -7,6 +7,7 @@ const Arsenal = lazy(() => import("./pages/AboutArsenal"));
 const England = lazy(() => import("./pages/AboutEngland"));
 const General = lazy(() => import("./pages/AboutGeneral"));
 const NotFound = lazy(() => import ("./utils/NotFound"));
+const Landing = lazy(() => import("./pages/Landing"));
 
 function App() {
   return (
@@ -14,6 +15,20 @@ function App() {
       <Routes>
         <Route
           path="/"
+          element={
+            <Suspense
+              fallback={
+                <div className="w-full h-screen bg-background flex justify-center items-center font-apercu-bold text-font">
+                  Loading...
+                </div>
+              }
+            >
+              <Home />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/Home"
           element={
             <Suspense
               fallback={
@@ -96,7 +111,7 @@ function App() {
             </Suspense>
           }
         />
-        <Route path="*" element = {<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

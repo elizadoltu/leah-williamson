@@ -6,6 +6,11 @@ const MenuHeader = () => {
       <div className="flex justify-end mt-6 mr-12">
         <div className="flex w-96 justify-between text-xl">
           <div className="text-font font-urbanist font-bold">
+            <NavLink to="/Home">
+              <p>Home</p>
+            </NavLink>
+          </div>
+          <div className="text-font font-urbanist font-bold">
             <NavLink to="/General">
               <p>About</p>
             </NavLink>
