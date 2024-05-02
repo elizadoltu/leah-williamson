@@ -8,7 +8,7 @@ const Transition = ({ title, photo }) => {
         gsap.to(".slowmo-entrance", {
             duration: 2, 
             x: "200%",
-            ease: SlowMo.ease.config(0.2, 1, false),
+            ease: SlowMo.ease.config(0.2, 0.9, false),
         })
     }, []);
     
@@ -17,11 +17,10 @@ const Transition = ({ title, photo }) => {
         <div className="flex justify-center items-center">
           <img src={photo} alt="photo of Leah Williamson" className="mt-28" />
         </div>
-        <div className="z-10 flex flex-row mix-blend-exclusion items-center -mt-128 ml-20">
+        <div className="z-10 flex flex-row mix-blend-exclusion justify-center items-center -mt-128">
           <h1 className="text-10xl font-apercu-bold">
             {title} 
           </h1>
-          <h3 className="-mt-40">TM</h3>
         </div>
       </div>
     );
