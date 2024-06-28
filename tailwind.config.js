@@ -17,12 +17,15 @@ export default {
       },
       fontSize : {
         '10xl' : '200px',
-        '12xl' : '210px'
+        '12xl' : '210px',
+        '14xl' : '400px'
       },
       spacing : {
         '128' : '500px',
         '20rem' : '100%',
-        '256' : '450px' 
+        '256' : '450px',
+        '512' : '1000px',
+        '400' : '400px'
       },
       height : {
         '1px' : '1px',
@@ -30,7 +33,8 @@ export default {
       },
       width : {
         '1200' : '1400px',
-        '20rem' : '32rem'
+        '20rem' : '32rem',
+        '25' : '800px'
       }
     },
   },
